@@ -7,22 +7,25 @@
     <title>landing-page</title>
     <!--CSS--> 
     <link rel="stylesheet" href="./assets/style.css">
+    <!--Mediaqueries-->
+    <link rel="stylesheet" href="./assets/mediaqueries.css">
 </head>
 
 <body>
    <header>
-    <img src="./assets/img/Logo-Dev.png" alt="Logo" class="
-    logo">
+        <img src="./assets/img/Logo-Dev.png" alt="Logo" class="logo">
 
-    <nav class="navbar">
-        <ul class="navbar-list">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Clientes</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-        <img src="./assets/img/carrito-de-compras.png" alt="Carrito de compras" class="cart-icon">
-    </nav>
+        <nav class="navbar">
+            <label for="menu-toggle" class="menu-label"><img src="./assets/img/menu/menu-desplegable.png" alt="" class="menu-icon"></label>
+            <input type="checkbox" id="menu-toggle">
+            <ul class="navbar-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Servicios</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <img src="./assets/img/carrito-de-compras.png" alt="Carrito de compras" class="cart-icon">
+        </nav>
     
    </header>
 
@@ -35,23 +38,97 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus minima eos vitae dolores odit blanditiis tempore in id recusandae libero!</p>
 
                 <div class="hero-buttons">
-                    <a href="#">Contáctame</a>
-                    <a href="#">Más info</a>
+                    <button class="btn-1">Contacto</button>
+                    <button class="btn-2">Más info</button>
                 </div>
             </div>
 
-            <img src="./assets/img/undraw_Programmer.png" class="hero-img" alt="Programmer">
+            <img src="./assets/img/hero/undraw_Programmer.png" class="hero-img" alt="Programmer">
 
         </section>
 
         <section id="about">
 
-            <h2>Sobre nosotros</h2>
+            <div class="about-info"> 
+
+                <h2>Sobre nosotros</h2>
+
+                <hr>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae, eum laboriosam sunt ipsam neque magnam itaque consequuntur temporibus dolorum quidem excepturi, repellat exercitationem iste, porro rem qui officia ipsa minus.</p>
+
+            </div> 
+
+        </section>
+
+        <section id="info">
+
+            <h2>Crea, aprende y comparte lo NFTs</h2>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat fuga laudantium ipsam provident? Explicabo laudantium nam accusamus sed obcaecati. In voluptas iusto tempora facilis nesciunt modi facere porro repellendus eveniet quod quas ad, reprehenderit eum vel quidem cupiditate, quos, ducimus architecto. Similique iure hic laborum, quidem aut ea quae distinctio?</p>
+        
+            <div class="info-cards-container">
+                <div class="info-card">
+                    <img src="./assets/img/info/codigo.png" alt="" />
+                    <h3>Configura tu wallet</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, alias.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/img/info/css-3.png" alt="" />
+                    <h3>Configura tu wallet</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, asperiores.</p>
+                </div>
+                <div class="info-card">
+                    <img src="./assets/img/info/palanca-de-mando.png" alt="" />
+                    <h3>Configura tu wallet</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, eveniet.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="contact">
+
+            <h2>Contáctanos</h2>
+
+            <hr>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, veritatis.</p>
+
+            <div class="contact-container">
+
+                <form class="contact-info">
+                    <label class="nombre" for="nombre">Nombre completo:</label/>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre"/>
+
+                    <label class="email" for="email">Email:</label/>
+                    <input type="text" name="email" id="email" placeholder="Correo Electrónico"/>
+
+                    <label class="mensaje" for="mensaje">Mensaje:</label>
+                    <textarea name="Mensaje" id="mensaje" cols="43" rows="5"></textarea>
+
+                    <input class="enviar" type="submit" name="enviar" value="Enviar"/>
+                </form>
+
+                <div class="encuentranos" id="encuentranos">
+                    <h3>Ciudad Autónoma de Buenos Aires, Argentina.</h3>
+                    <h3 class="tlf">Telf: 11 5555555</h3>
+                    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0642823270905!2d-58.413233684771086!3d-34.577239980466395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb57a416cbf91%3A0xf6fad65042f6daf7!2sAv.%20del%20Libertador%203000%2C%20C1425%20CABA!5e0!3m2!1ses-419!2sar!4v1655856223135!5m2!1ses-419!2sar" style="border-radius: 8px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+            </div>
         </section>
 
    </main>
+
+   <footer>
+        <div class="redes-footer">
+            <a href="#"><img src="./assets/img/redes/github.svg" alt="" class="redes"></a>
+            <a href="#"><img src="./assets/img/redes/envelope-solid.svg" alt="" class="redes"></a>
+            <a href="#"><img src="./assets/img/redes/linkedin.svg" alt="" class="redes"></a>
+        </div>
+        <img src="./assets/img/Logo-Dev.png" alt="Logo" class="logo-footer">
+   </footer>
 
 </body>
 </html>
